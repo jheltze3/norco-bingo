@@ -27,7 +27,7 @@ public class BingoSalesPanel extends JPanel {
 		setPreferredSize(new Dimension(panelWidth, panelHeight));
 		setLayout(null);
 		
-		BingoSales bingoSales = new BingoSales();
+		//BingoSales bingoSales = new BingoSales();
 		
 		JButton exitButton = new JButton("Exit");
 		
@@ -42,30 +42,5 @@ public class BingoSalesPanel extends JPanel {
 		exitButton.setBackground(Color.RED);
 		
 		add(exitButton);
-	}
-	
-	
-	public static void main(String[] args) {
-		SwingUtilities.invokeLater(new Runnable() {
-			@Override
-			public void run() {
-				JFrame frame = new JFrame();
-				BingoSalesPanel panel = new BingoSalesPanel();
-				frame.getContentPane().add(panel);
-				frame.pack();
-				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-				frame.setVisible(true);
-				
-				BingoSales.setUpGame();
-				
-			}
-		});
-	}
-	
-	
-	
-	
-	
-	
-
+	}	
 }
